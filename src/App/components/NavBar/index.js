@@ -2,6 +2,7 @@ import logo from '../../../logo.png'
 import { Avatar, Col, Row, Space, Tabs } from 'antd';
 import { DownOutlined, UserOutlined } from '@ant-design/icons';
 import user from './store/images/Ellipse_12@2x.png';
+import { items } from './store/data';
 
 function NavBar() {
 
@@ -11,11 +12,13 @@ function NavBar() {
                 <div className="logo"><img src={logo} alt='logo' /></div>
             </Col>
             <Col span={20}>
-                <Tabs size='large' className='m-t-4'>
-                        <Tabs.TabPane 
+                <Tabs size='large' className='m-t-4' items={items} />
+                {/* The following is deprecate, hence it is commented out. Above line generates the tabs */}
+                {/* <Tabs size='large' className='m-t-4'>
+                        <Tabs.TabPane
                         key={0}
                         tab={<span className='fs-18px medium'>Wallet Dashboard</span>} />
-                </Tabs>
+                </Tabs> */}
             </Col>
             <Col span={1}>
                 <Space size="small">

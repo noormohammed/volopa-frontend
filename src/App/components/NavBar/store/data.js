@@ -4,16 +4,16 @@ import cards from './images/cards.png';
 import accounting from './images/accounting.png';
 import analytics from './images/analytics.png';
 import squareLogo from './images/logo.png';
-import URLS from '../../../../Routes/constants';
+// import URLS from '../../../../Routes/constants'; // Since this is not given in the frontend repo of the challenge
 
 const items = [
     {
         label: 'Wallet Dashboard',
-        key: URLS.WalletDashboard
+        key: 1
     },
     {
         label: 'Fund Wallet',
-        key: URLS.FundWallet
+        key: 2
     },
     {
         label: 'Convert Balances',
